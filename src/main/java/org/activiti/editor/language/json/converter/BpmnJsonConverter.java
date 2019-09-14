@@ -865,6 +865,7 @@ public class BpmnJsonConverter implements EditorJsonConstants, StencilConstants,
 		}
 	}
 
+	@SuppressWarnings("unlikely-arg-type")
 	private void readEdgeDI(Map<String, JsonNode> edgeMap, Map<String, List<JsonNode>> sourceAndTargetMap, BpmnModel bpmnModel) {
 		for (String edgeId : edgeMap.keySet()) {
 			JsonNode edgeNode = edgeMap.get(edgeId);
